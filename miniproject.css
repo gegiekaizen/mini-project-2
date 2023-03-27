@@ -1,4 +1,14 @@
+:root {
+    --mycolor1: #6DB1FF;
+    --mycolor2: #F16165;
+    --mycolor3: #FFBA05;
+    --mycolor4: #DCFF82;
+    --mycolor5: rgba(102, 51, 153);
+    --mycolor6: #00C86F;
+}
+
 body {
+    background-color: white;
     padding: 0;
     margin: 0;
     /* vertical-align: baseline; */
@@ -6,57 +16,46 @@ body {
     font-family: "Lato", sans-serif;
 }
 
-.navbar-nav {
-    background-color: rgb(157, 154, 154);
-    height: 100px;
+.header-content a .active1 {
+    text-align: start;
+    right: 30px;
 }
 
-.klogo {
-    padding-left: 10px;
-    padding-top: 5px;
-}
-
-.companyName {
-    font-size: 30px;
-
+.ad {
+    color: rgb(116, 114, 114);
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .sidebar {
     margin: 0;
     padding: 0;
     width: 250px;
-    background-color: #f1f1f1;
+    background-color: rebeccapurple;
     position: fixed;
     height: 100%;
     overflow: auto;
 }
-img {
-    padding-left: 10px;
-    align-items: center;
-}
+
 .sidebar a {
     display: block;
-    color: black;
-    padding: 16px;
+    color: white;
+    padding: 13px;
     text-decoration: none;
 }
 
-.sidebar a.active {
-    background-color: #606261;
-    color: white;
-    border-top: 2px solid;
-}
-
-.sidebar a:hover:not(.active) {
-    background-color: #555;
+.sidebar a.active,
+.ord,
+.pro,
+.fin {
+    background-color: #27C2E1;
     color: white;
 }
 
-/* div.content {
-    margin-left: 200px;
-    padding: 1px 16px;
-    height: 1000px;
-} */
+.sidebar a:hover:not(.active, .ord, .pro, .fin) {
+    background-color: #AE67DE;
+    color: white;
+}
 
 @media screen and (max-width: 700px) {
     .sidebar {
@@ -67,7 +66,7 @@ img {
 
     /* .sidebar a {
         float: left;
-    } */
+    }  */
 
     div.content {
         margin-left: 0;
@@ -80,3 +79,166 @@ img {
         /* float: none; */
     }
 }
+
+.una-container {
+
+    padding: 40px;
+
+}
+
+.first-container {
+    width: 80%;
+
+    background-color: whitesmoke;
+    ;
+    padding: 15px;
+    border: 3px solid;
+    margin: 0px auto;
+    position: relative;
+    left: 125px;
+}
+
+.order1 {
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 5px;
+    font-weight: bolder;
+}
+
+.orderone {
+    padding-top: 50px;
+    padding-left: 10px;
+    color: rebeccapurple;
+    position: absolute;
+    left: 6%;
+}
+
+.ordertwo {
+    padding-top: 50px;
+    padding-left: 500px;
+}
+
+.panggalawa {
+    padding: 40px;
+}
+
+.second-container {
+    width: 80%;
+    height: 300px;
+    background-color: #cbcece;
+    padding: 15px;
+    border: 3px solid;
+    margin: 0px auto;
+    position: relative;
+    left: 125px;
+}
+
+.insight {
+    text-align: left;
+    padding-left: 400px;
+    padding-top: 5px;
+    font-weight: bolder;
+}
+
+.tatlo {
+    padding: 40px;
+}
+
+.thrird-container {
+    width: 80%;
+    height: 300px;
+    background-color: #cbcece;
+    padding: 15px;
+    border: 3px solid;
+    margin: 0px auto;
+    position: relative;
+    left: 125px;
+}
+
+.rank {
+    text-align: left;
+    padding-left: 400px;
+    padding-top: 20px;
+    font-weight: bolder;
+}
+
+/* order container */
+
+.order-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+
+}
+
+.order-card-container>* {
+    width: 200px;
+    height: 90px;
+    border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/* Login display */
+
+.wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    overflow: hidden;
+    min-width: 100%;
+    min-height: 100vh;
+   
+    
+}
+
+.auth-content {
+    position: relative;
+    width: 480px;
+    padding: 15px;
+    z-index: 5;
+    border: 1px solid blue;
+    border-radius: 15px;
+}
+
+.auth-content .card {
+    margin-bottom: 0;
+    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
+    
+    border: none;
+    transition: all 0.5s;
+} 
+.card-body {
+    padding: 30px 25px;
+    flex: 1 1 auto;
+    min-height: 1px;
+    
+}
+.text-center {
+    text-align: center;
+}
+/* .main-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    min-width: 100%;
+    height: 100vh;
+    padding: 0px auto;
+}
+
+.card {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    padding: 0, auto;
+    border: 2px solid black;
+    box-shadow: 2px; */
+/* } */
