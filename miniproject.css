@@ -3,12 +3,12 @@
     --mycolor2: #F16165;
     --mycolor3: #FFBA05;
     --mycolor4: #DCFF82;
-    --mycolor5: rgba(102, 51, 153);
+    --mycolor5: #653298;
     --mycolor6: #00C86F;
 }
 
 body {
-    background-color: white;
+    /* background-color: white; */
     padding: 0;
     margin: 0;
     /* vertical-align: baseline; */
@@ -22,7 +22,7 @@ body {
 }
 
 .ad {
-    color: rgb(116, 114, 114);
+    color: white;
     font-weight: bold;
     font-size: 20px;
 }
@@ -64,10 +64,7 @@ body {
         position: relative;
     }
 
-    /* .sidebar a {
-        float: left;
-    }  */
-
+    
     div.content {
         margin-left: 0;
     }
@@ -80,43 +77,50 @@ body {
     }
 }
 
-.una-container {
-
+.main-container {
     padding: 40px;
-
 }
 
 .first-container {
     width: 80%;
-
     background-color: whitesmoke;
-    ;
     padding: 15px;
     border: 3px solid;
     margin: 0px auto;
     position: relative;
     left: 125px;
+    
+}
+.order {
+    color: var(--mycolor5);
+    font-weight: bold;
+   
+}
+.process {
+    background-color: var(--mycolor1);
+    cursor: pointer;
+}
+.processed {
+    background-color: var(--mycolor2);
+    cursor: pointer;
+}
+.toShip {
+    background-color: var(--mycolor3);
+    cursor: pointer;
+}
+.shipin {
+    background-color: var(--mycolor4);
+    cursor: pointer;
+}
+.comp {
+    background-color: var(--mycolor5);
+    cursor: pointer;
+}
+.cancel {
+    background-color: var(--mycolor6);
+    cursor: pointer;
 }
 
-.order1 {
-    text-align: left;
-    padding-left: 100px;
-    padding-top: 5px;
-    font-weight: bolder;
-}
-
-.orderone {
-    padding-top: 50px;
-    padding-left: 10px;
-    color: rebeccapurple;
-    position: absolute;
-    left: 6%;
-}
-
-.ordertwo {
-    padding-top: 50px;
-    padding-left: 500px;
-}
 
 .panggalawa {
     padding: 40px;
@@ -187,6 +191,7 @@ body {
 /* Login display */
 
 .wrapper {
+   
     position: relative;
     display: flex;
     justify-content: center !important;
@@ -234,11 +239,33 @@ body {
     padding: 0px auto;
 }
 
+
+/**************************************/
+.col-lg-12 {
+    margin: 0;
+    padding: 0;
+    background-color: var(--mycolor5);
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding-left: 35%;
+    padding-right: 70%;
+   
+    
+}
 .card {
     position: absolute;
     justify-content: center;
     align-items: center;
     padding: 0, auto;
-    border: 2px solid black;
-    box-shadow: 2px; */
-/* } */
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 2px; 
+
+}
+.card-header {
+    color: var(--mycolor5);
+}
+.card-title {
+    text-align: center;
+}
