@@ -2,18 +2,21 @@
     --mycolor1: #6DB1FF;
     --mycolor2: #F16165;
     --mycolor3: #FFBA05;
-    --mycolor4: #DCFF82;
+    --mycolor4: #b0d05d;
     --mycolor5: #653298;
     --mycolor6: #00C86F;
 }
 
 body {
-    /* background-color: white; */
+    background-color: whitesmoke;
     padding: 0;
     margin: 0;
     /* vertical-align: baseline; */
     border: 0;
     font-family: "Lato", sans-serif;
+    color: var(--mycolor5);
+    height: 100vh;
+    width: 100%;
 }
 
 .header-content a .active1 {
@@ -52,7 +55,7 @@ body {
     color: white;
 }
 
-.sidebar a:hover:not(.active, .ord, .pro, .fin) {
+.sidebar a:hover:not(.active, .ord, .pro, .fin, .home, .hme) {
     background-color: #AE67DE;
     color: white;
 }
@@ -64,7 +67,7 @@ body {
         position: relative;
     }
 
-    
+
     div.content {
         margin-left: 0;
     }
@@ -77,47 +80,61 @@ body {
     }
 }
 
+/***********************End of Sidebar******************************/
+/**************Landing Page***************************/
+
 .main-container {
     padding: 40px;
 }
 
 .first-container {
     width: 80%;
-    background-color: whitesmoke;
-    padding: 15px;
-    border: 3px solid;
+    padding: 25px;
     margin: 0px auto;
     position: relative;
     left: 125px;
-    
+    background-color: white;
+    box-shadow: 0 0 5px 0 grey;
+
 }
+
 .order {
     color: var(--mycolor5);
     font-weight: bold;
-   
+    text-align: left;
+    padding-left: 375px;
+    padding-top: 5px;
+    font-weight: bolder;
+
 }
+
 .process {
     background-color: var(--mycolor1);
     cursor: pointer;
 }
+
 .processed {
-    background-color: var(--mycolor2);
+    background-color: var(--mycolor5);
     cursor: pointer;
 }
+
 .toShip {
     background-color: var(--mycolor3);
     cursor: pointer;
 }
+
 .shipin {
     background-color: var(--mycolor4);
     cursor: pointer;
 }
+
 .comp {
-    background-color: var(--mycolor5);
+    background-color: var(--mycolor6);
     cursor: pointer;
 }
+
 .cancel {
-    background-color: var(--mycolor6);
+    background-color: var(--mycolor2);
     cursor: pointer;
 }
 
@@ -128,20 +145,40 @@ body {
 
 .second-container {
     width: 80%;
-    height: 300px;
+    height: 850px;
     background-color: #cbcece;
-    padding: 15px;
-    border: 3px solid;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 0 5px 0 grey;
     margin: 0px auto;
     position: relative;
     left: 125px;
 }
 
+#chartContainer {
+    margin-bottom: 50px;
+}
+
 .insight {
     text-align: left;
-    padding-left: 400px;
+    padding-left: 50px;
     padding-top: 5px;
     font-weight: bolder;
+    margin-left: 325px;
+
+}
+
+/****************Bar Chart*********************/
+
+#myChart {
+    width: 100%;
+    max-width: 500px;
+
+}
+
+#myChart1 {
+    width: 100%;
+    max-width: 500px;
 }
 
 .tatlo {
@@ -152,8 +189,9 @@ body {
     width: 80%;
     height: 300px;
     background-color: #cbcece;
-    padding: 15px;
-    border: 3px solid;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 0 5px 0 grey;
     margin: 0px auto;
     position: relative;
     left: 125px;
@@ -161,12 +199,13 @@ body {
 
 .rank {
     text-align: left;
-    padding-left: 400px;
+    padding-left: 50px;
     padding-top: 20px;
     font-weight: bolder;
+    margin-left: 325px;
 }
 
-/* order container */
+/*****************order container ***************************/
 
 .order-card-container {
     display: flex;
@@ -179,7 +218,7 @@ body {
 .order-card-container>* {
     width: 200px;
     height: 90px;
-    border: 1px solid black;
+    color: white;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -188,10 +227,10 @@ body {
     font-weight: 600;
 }
 
-/* Login display */
+/******************Login display*******************/
 
 .wrapper {
-   
+
     position: relative;
     display: flex;
     justify-content: center !important;
@@ -199,8 +238,8 @@ body {
     overflow: hidden;
     min-width: 100%;
     min-height: 100vh;
-   
-    
+
+
 }
 
 .auth-content {
@@ -215,19 +254,22 @@ body {
 .auth-content .card {
     margin-bottom: 0;
     box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
-    
+
     border: none;
     transition: all 0.5s;
-} 
+}
+
 .card-body {
     padding: 30px 25px;
     flex: 1 1 auto;
     min-height: 1px;
-    
+
 }
+
 .text-center {
     text-align: center;
 }
+
 /* .main-container {
     position: relative;
     display: flex;
@@ -240,7 +282,7 @@ body {
 }
 
 
-/**************************************/
+/**************Sign Up************************/
 .col-lg-12 {
     margin: 0;
     padding: 0;
@@ -250,9 +292,10 @@ body {
     align-items: center;
     padding-left: 35%;
     padding-right: 70%;
-   
-    
+
+
 }
+
 .card {
     position: absolute;
     justify-content: center;
@@ -260,12 +303,123 @@ body {
     padding: 0, auto;
     border: 1px solid black;
     border-radius: 15px;
-    box-shadow: 2px; 
+    box-shadow: 2px;
 
 }
+
 .card-header {
     color: var(--mycolor5);
 }
+
 .card-title {
     text-align: center;
 }
+
+/*********************My Shipping****************************************/
+h2 {
+    margin-left: 250px;
+}
+
+.main-shipping-container {
+    margin-left: 250px;
+}
+
+/* .sub-shipping-container {
+   margin-top: 30px;
+} */
+.shipping-item {
+    width: 80%;
+    height: 300px;
+    background-color: #cbcece;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 0 5px 0 grey;
+    margin: 0 auto;
+    position: relative;
+    left: 40px;
+
+}
+
+.item1 {
+    list-style: none;
+}
+
+.item-disc {
+    text-align: left;
+    font-size: 20px;
+
+}
+
+.shipping-info-container {
+    width: 80%;
+    background-color: #cbcece;
+    padding: 30px 15px 15px 15px;
+    background-color: white;
+    box-shadow: 0 0 5px 0 grey;
+    margin: 100px auto 0 auto;
+    position: relative;
+    left: 40px;
+
+}
+
+.shipping-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.sub-shipping-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding-left: 500px;
+}
+
+.toShipp {
+    padding-top: 40px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+/*****************Shipping Settings**********************************/
+
+.text-muted {
+    padding-left: 255px;
+}
+
+.option-shipping {
+    padding-left: 250px;
+}
+
+.text-muted {
+    padding-left: 255px;
+}
+
+/*******************Product card cathegory********************************/
+
+.card-category {
+    width:  20rem;
+    background-color: #cbcece;
+    padding: 30px 15px 15px 15px;
+    background-color: white;
+    box-shadow: 0 0 5px 0 grey;
+    margin: 100px auto 0 auto;
+    position: relative;
+    left: 40px;
+
+}
+
+.hover-effect>*:hover {
+    opacity: 0.8;
+    border: 2px solid black !important;
+}
+
+.card-title {
+    position: absolute;
+    top: 10px;
+    left: 16px;
+    font-weight: bold x;
+}
+
