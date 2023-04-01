@@ -17,6 +17,7 @@ body {
     color: var(--mycolor5);
     height: 100vh;
     width: 100%;
+
 }
 
 .header-content a .active1 {
@@ -98,7 +99,7 @@ body {
 
 }
 
-.order {
+/* .order {
     color: var(--mycolor5);
     font-weight: bold;
     text-align: left;
@@ -106,17 +107,8 @@ body {
     padding-top: 5px;
     font-weight: bolder;
 
-}
+} */
 
-.process {
-    background-color: var(--mycolor1);
-    cursor: pointer;
-}
-
-.processed {
-    background-color: var(--mycolor5);
-    cursor: pointer;
-}
 
 .toShip {
     background-color: var(--mycolor3);
@@ -140,7 +132,10 @@ body {
 
 
 .panggalawa {
-    padding: 40px;
+    margin: 0;
+    padding: 0px;
+    width: 100%;
+    max-height: 100vh;
 }
 
 .second-container {
@@ -167,20 +162,6 @@ body {
     margin-left: 325px;
 
 }
-
-/****************Bar Chart*********************/
-
-#myChart {
-    width: 100%;
-    max-width: 500px;
-
-}
-
-#myChart1 {
-    width: 100%;
-    max-width: 500px;
-}
-
 .tatlo {
     padding: 40px;
 }
@@ -205,8 +186,6 @@ body {
     margin-left: 325px;
 }
 
-/*****************order container ***************************/
-
 .order-card-container {
     display: flex;
     flex-wrap: wrap;
@@ -227,173 +206,6 @@ body {
     font-weight: 600;
 }
 
-/******************Login display*******************/
-
-.wrapper {
-
-    position: relative;
-    display: flex;
-    justify-content: center !important;
-    align-items: center;
-    overflow: hidden;
-    min-width: 100%;
-    min-height: 100vh;
-
-
-}
-
-.auth-content {
-    position: relative;
-    width: 480px;
-    padding: 15px;
-    z-index: 5;
-    border: 1px solid blue;
-    border-radius: 15px;
-}
-
-.auth-content .card {
-    margin-bottom: 0;
-    box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
-    border: none;
-    transition: all 0.5s;
-}
-
-.card-body {
-    padding: 30px 25px;
-    flex: 1 1 auto;
-    min-height: 1px;
-
-}
-
-.text-center {
-    text-align: center;
-}
-
-/* .main-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    min-width: 100%;
-    height: 100vh;
-    padding: 0px auto;
-}
-
-
-/**************Sign Up************************/
-.col-lg-12 {
-    margin: 40px;
-    padding: 0;
-    background-color: var(--mycolor5);
-    height: auto;
-    justify-content: center;
-    align-items: center;
-    padding-left: 35%;
-    /* padding-right: 70%; */
-}
-
-.card {
-    position: absolute;
-    justify-content: center;
-    align-items: center;
-    padding: 0, auto;
-    border: 1px solid black;
-    border-radius: 15px;
-    box-shadow: 2px;
-
-}
-
-.card-header {
-    text-align: center;
-    color: var(--mycolor5);
-}
-
-/* .kaizen-registration {
-    text-align: left;
-    position: absolute;
-    justify-content: left !important;
-    align-items: end;
-} */
-
-.card-title-registration {
-    display: flex;
-    justify-content:end;
-    align-content: end;
-}
-#reg-logo {
-    align-items: end;
-}
-
-
-/*********************My Shipping****************************************/
-h2 {
-    margin-left: 250px;
-}
-
-.main-shipping-container {
-    margin-left: 250px;
-}
-
-/* .sub-shipping-container {
-   margin-top: 30px;
-} */
-.shipping-item {
-    width: 80%;
-    height: 300px;
-    background-color: #cbcece;
-    padding: 25px;
-    background-color: white;
-    box-shadow: 0 0 5px 0 grey;
-    margin: 0 auto;
-    position: relative;
-    left: 40px;
-
-}
-
-.item1 {
-    list-style: none;
-}
-
-.item-disc {
-    text-align: left;
-    font-size: 20px;
-
-}
-
-.shipping-info-container {
-    width: 80%;
-    background-color: #cbcece;
-    padding: 30px 15px 15px 15px;
-    background-color: white;
-    box-shadow: 0 0 5px 0 grey;
-    margin: 100px auto 0 auto;
-    position: relative;
-    left: 40px;
-
-}
-
-.shipping-card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 20px;
-}
-
-.sub-shipping-info-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-size: 20px;
-    padding-left: 500px;
-}
-
-.toShipp {
-    padding-top: 40px;
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-
 /*****************Shipping Settings**********************************/
 .ss-container {
     margin: 0;
@@ -403,6 +215,7 @@ h2 {
     display: flex;
     position: relative;
 }
+
 .shipping-main-container {
     margin: 50px;
     padding: 0;
@@ -412,12 +225,12 @@ h2 {
     position: absolute;
 }
 
-.shipping-sub-container{
+.shipping-sub-container {
     margin-top: 90px;
     height: 150px;
     width: 80%;
     background-color: #cbcece;
-   
+
     padding: 30px;
     background-color: white;
     box-shadow: 0 0 5px 0 grey;
@@ -427,15 +240,17 @@ h2 {
     align-items: center;
     left: 150px;
 }
+
 .logistics-trans {
     padding-left: 250px;
 }
+
 .select-shipping-settings {
     margin-top: 290px;
     height: 650px;
     width: 80%;
     background-color: #cbcece;
-   
+
     padding: 30px;
     background-color: white;
     box-shadow: 0 0 5px 0 grey;
@@ -444,44 +259,19 @@ h2 {
     justify-content: center;
     align-items: center;
     left: 200px;
-}
+} 
 
-/*******************Product card cathegory********************************/
-
-.card-category {
-    width:  20rem;
-    background-color: #cbcece;
-    padding: 30px 15px 15px 15px;
-    background-color: white;
-    box-shadow: 0 0 5px 0 grey;
-    margin: 100px auto 0 auto;
-    position: relative;
-    left: 40px;
-
-}
-
-.hover-effect>*:hover {
-    opacity: 0.8;
-    border: 2px solid black !important;
-}
-
-.card-title {
+.container {
     position: absolute;
-    top: 10px;
-    left: 16px;
-    font-weight: bold x;
-}
-/******************Bank Account************************/
-.second-container-bank {
-    width: 80%;
-    height: 850px;
-    background-color: #cbcece;
-    padding: 25px;
-    background-color: white;
-    box-shadow: 0 0 5px 0 grey;
-    margin: 0px auto;
-    position: relative;
-    left: 125px;
-}
 
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+.main-wrapper {
+    width: 600px;
+    position: absolute;
+   top: 0;
+   left: 450px;
+} 
