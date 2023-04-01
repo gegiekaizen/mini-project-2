@@ -12,6 +12,12 @@
         integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="miniproject.css">
+    <!-----simple collapsable-------->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
@@ -44,27 +50,31 @@
         </div>
     </div>
     <!---------------------------End Of Sidebar-------------------------------------------------->
-
-    <div class="main-shipping-container">
-        <div class="sub-shipping-container">
-            <h2 class="toShipp"> Shipping Settings </h2>
-            <p class="text-muted"> Related settings for logistics transportation</p>
-            <div class="option-shipping">
-                <h4>Shipping Option Setting</h4>
-                <p class="text-muted1">Set up your favorite channels</p>
+    <div class="ss-container">
+        <div class="shipping-main-container">
+            <div class="shipping-sub-container">
+                <h2>Shipping Settings</h2>
+                <p class="logistics-trans text-muted">Related settings for logistics transportation</p>
             </div>
-            <div class="username-container">
-                <div class="sub-username-container">
-                    <h5>Product</h5>
-                    <h5>Quantity</h5>
-                    <h5>Price</h5>
-                    <h5>Courier</h5>
-                    <h5>Pick-up Schedule</h5>
+        </div>
+
+        <div class="select-shipping-settings">
+            <div class="container">
+                <h2>Flash Express</h2>
+                <a href="#demo" class="btn btn-primary" data-toggle="collapse">Flash Express</a>
+                <div id="demo" class="collapse">
+                    Flash Express Max Dimension: 150cm each side Max Actual Weight:50kg Service Time:Monday to Sunday
+                    Pick-up period - every day (including weekends and public holiday) 11am to 6pm Delivery period-every
+                    day (including weekend and public holiday) 9am to 6pm.
+
+
+
                 </div>
             </div>
 
+        </div>
 
-
+    </div>
 </body>
 
 </html>

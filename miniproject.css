@@ -254,7 +254,6 @@ body {
 .auth-content .card {
     margin-bottom: 0;
     box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
-
     border: none;
     transition: all 0.5s;
 }
@@ -284,16 +283,14 @@ body {
 
 /**************Sign Up************************/
 .col-lg-12 {
-    margin: 0;
+    margin: 40px;
     padding: 0;
     background-color: var(--mycolor5);
     height: auto;
     justify-content: center;
     align-items: center;
     padding-left: 35%;
-    padding-right: 70%;
-
-
+    /* padding-right: 70%; */
 }
 
 .card {
@@ -308,12 +305,26 @@ body {
 }
 
 .card-header {
+    text-align: center;
     color: var(--mycolor5);
 }
 
-.card-title {
-    text-align: center;
+/* .kaizen-registration {
+    text-align: left;
+    position: absolute;
+    justify-content: left !important;
+    align-items: end;
+} */
+
+.card-title-registration {
+    display: flex;
+    justify-content:end;
+    align-content: end;
 }
+#reg-logo {
+    align-items: end;
+}
+
 
 /*********************My Shipping****************************************/
 h2 {
@@ -384,17 +395,55 @@ h2 {
 }
 
 /*****************Shipping Settings**********************************/
-
-.text-muted {
-    padding-left: 255px;
+.ss-container {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+.shipping-main-container {
+    margin: 50px;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
 }
 
-.option-shipping {
+.shipping-sub-container{
+    margin-top: 90px;
+    height: 150px;
+    width: 80%;
+    background-color: #cbcece;
+   
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 0 5px 0 grey;
+    margin: 0px auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: 150px;
+}
+.logistics-trans {
     padding-left: 250px;
 }
-
-.text-muted {
-    padding-left: 255px;
+.select-shipping-settings {
+    margin-top: 290px;
+    height: 650px;
+    width: 80%;
+    background-color: #cbcece;
+   
+    padding: 30px;
+    background-color: white;
+    box-shadow: 0 0 5px 0 grey;
+    margin: 200px auto 0 auto;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    left: 200px;
 }
 
 /*******************Product card cathegory********************************/
@@ -422,4 +471,17 @@ h2 {
     left: 16px;
     font-weight: bold x;
 }
+/******************Bank Account************************/
+.second-container-bank {
+    width: 80%;
+    height: 850px;
+    background-color: #cbcece;
+    padding: 25px;
+    background-color: white;
+    box-shadow: 0 0 5px 0 grey;
+    margin: 0px auto;
+    position: relative;
+    left: 125px;
+}
+
 
