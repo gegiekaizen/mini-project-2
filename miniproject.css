@@ -25,16 +25,20 @@ body {
     right: 30px;
 }
 
-.ad {
+/* .ad {
+    
     color: white;
     font-weight: bold;
     font-size: 20px;
+} */
+.kaizen {
+    margin-top: 110px;
 }
 
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 250px;
+    width: 230px;
     background-color: rebeccapurple;
     position: fixed;
     height: 100%;
@@ -44,22 +48,33 @@ body {
 .sidebar a {
     display: block;
     color: white;
-    padding: 13px;
+    padding: 16px;
     text-decoration: none;
 }
 
-.sidebar a.active,
+/* .sidebar a.active,
 .ord,
 .pro,
 .fin {
     background-color: #27C2E1;
     color: white;
+} */
+.admin {
+    padding-left: 50px ;
+    position: absolute;
+    top: 5px;
+    left: 25px;
+    align-items: center;
+    justify-content: center;
 }
-
-.sidebar a:hover:not(.active, .ord, .pro, .fin, .home, .hme) {
+.sidebar a:hover {
+    background-color: #AE67DE;
+    color:white;
+}
+/* .sidebar a:hover:not(.active, .ord, .pro, .fin, .home, .hme) {
     background-color: #AE67DE;
     color: white;
-}
+} */
 
 @media screen and (max-width: 700px) {
     .sidebar {
@@ -168,7 +183,7 @@ body {
 
 .thrird-container {
     width: 80%;
-    height: 300px;
+    height: 100%;
     background-color: #cbcece;
     padding: 25px;
     background-color: white;

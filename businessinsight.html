@@ -13,14 +13,19 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js">
     </script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+
     <link rel="stylesheet" href="datatables.min.css">
     <link rel="stylesheet" href="miniproject.css">
     <link rel="stylesheet" href="./css/businessInsight.css">
-    
+
     <script type="text/javascript">
         window.onload = function () {
 
-            var chart = new CanvasJS.Chart("chartContainer", {
+            var chart = new CanvasJS.Chart("chartContainerBar", {
                 theme: "light1", // "light2", "dark1", "dark2"
                 animationEnabled: false, // change to true		
                 title: {
@@ -50,8 +55,52 @@
             });
             chart.render();
 
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title: {
+                    text: "Company Revenue by Year"
+                },
+                axisY: {
+                    title: "Revenue in Php",
+                    valueFormatString: "#0,,.",
+                    suffix: "mn",
+                    prefix: "₱"
+                },
+                data: [{
+                    type: "splineArea",
+                    color: "rgba(54,158,173,.7)",
+                    markerSize: 5,
+                    xValueFormatString: "YYYY",
+                    yValueFormatString: "₱#,##0.##",
+                    dataPoints: [
+                        { x: new Date(2007, 0), y: 3289000 },
+                        { x: new Date(2008, 0), y: 3830000 },
+                        { x: new Date(2009, 0), y: 2009000 },
+                        { x: new Date(2010, 0), y: 2840000 },
+                        { x: new Date(2011, 0), y: 2396000 },
+                        { x: new Date(2012, 0), y: 1613000 },
+                        { x: new Date(2013, 0), y: 2821000 },
+                        { x: new Date(2014, 0), y: 2000000 },
+                        { x: new Date(2015, 0), y: 1397000 },
+                        { x: new Date(2016, 0), y: 2506000 },
+                        { x: new Date(2017, 0), y: 2798000 },
+                        { x: new Date(2018, 0), y: 4386000 },
+                        { x: new Date(2019, 0), y: 6704000 },
+                        { x: new Date(2020, 0), y: 6926000 },
+                        { x: new Date(2021, 0), y: 7394000 },
+                        { x: new Date(2022, 0), y: 6872000 },
+                        { x: new Date(2023, 0), y: 2140000 }
+                    ]
+                }]
+            });
+            chart.render();
+
+
+
         }
     </script>
+
+
 </head>
 
 <body>
@@ -59,44 +108,47 @@
     <!------------------------------Sidebar--------------------------->
     <div class="sidebar-container">
         <div class="sidebar">
-            <a class="home" href="index.html"><img class="klogo" src="./images/KLT-modified.png" alt="Kaizen Loft Logo"
-                    width="80px" height="80px"></a>
-            <a class="hme" href="index.html"><span class="ad">ADMIN</span></a>
-            <a class="active" id="ship" href="#"><strong> SHIPMENT </strong></a>
-            <a href="MyShipment.html">To Ship</a>
-            <a href="MassShip.html"> Shipping</a>
+            <a class="admin" href="index.html"><img class="klogo" src="./images/KLT-modified.png" alt="Kaizen Loft Logo" width="90px" height="90px"></a>
+            <a class="kaizen" href="index.html">ADMIN</a>
+            <a href="toShip.html">To Ship</a>
+            <a href="shipping.html"> Shipping</a>
             <a href="ShippingSettings.html">Shipping Settings</a>
-            <a class="ord" href="#"><strong>ORDER</strong></a>
             <a href="MyOrder.html">My Order</a>
             <a href="Cancellation.html">Cancellation</a>
             <a href="Refund.html">Return/Refund</a>
-            <a class="pro" href="#"><strong>PRODUCT</strong></a>
             <a href="MyProduct.html">My Product</a>
             <a href="AddNewProduct.html">Add New Product</a>
             <a href="productSetting.html">Product Settings</a>
-            <a class="fin" href="#"><strong>FINANCE</strong></a>
             <a href="Mybalance.html">My Balance</a>
             <a href="BankAccount.html">Bank Account</a>
             <a href="PaymentSetting.html">Payment Settings</a>
-            <a class="bus" href="businessinsight.html"><strong>BUSINESS INSIGHT</strong></a>
-            <a class="chat" href="ChatAssistant.html"><strong>CHAT ASSISTANT</strong></a>
-            <a class="user" href="accountUser.html"><strong>ACCOUNT</strong></a>
-            <a class="logout" href="login.html"><strong>LOGOUT</strong></a>
+            <a class="bus" href="businessinsight.html">Business Insight</a>
+            <a class="user" href="accountUser.html">Account</a>
+            <a class="logout" href="login.html">Logout</a>
         </div>
     </div>
     <!--------------------------End of Sidebar---------------------------------->
     <div class="panggalawa">
         <h2 class="insight">Business Insight</h2>
         <div class="second-container ">
-           
-            <div id="chartContainer" style="height: 100%; width: 100%;"></div>
+
+            <div id="chartContainerBar" style="height: 100%; width: 100%;"></div>
         </div>
     </div>
-<!-------------------------------javascript----------------------------------->
+
+    <div class="tatlo">
+        <h2 class="rank">Product Ranking</h2>
+        <div class="thrird-container">
+            <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+
+        </div>
+    </div>
+    <!-------------------------------javascript----------------------------------->
     <script src="datatable.min.js"></script>
     <script src="miniproject.js"></script>
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-    
+
 </body>
+
 </html>
