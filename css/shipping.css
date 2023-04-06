@@ -6,9 +6,9 @@ h2 {
     margin-left: 250px;
 }
 
-.sub-shipping-container {
+/* .sub-shipping-container {
    margin-top: 30px;
-}
+} */
 .shipping-item {
     width: 80%;
     height: 300px;
@@ -63,4 +63,15 @@ h2 {
     padding-top: 40px;
     padding-bottom: 0;
     margin-bottom: 0;
+}
+
+.toShipOrder {
+    background-color: var(--mycolor5);
+    border-radius: 15px;
+    justify-content: flex-end;
+    display: flex;
+  
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
 }

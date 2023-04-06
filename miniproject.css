@@ -3,7 +3,7 @@
     --mycolor2: #F16165;
     --mycolor3: #FFBA05;
     --mycolor4: #b0d05d;
-    --mycolor5: #653298;
+    --mycolor5: #9248db;
     --mycolor6: #00C86F;
 }
 
@@ -38,7 +38,7 @@ body {
 .sidebar {
     margin: 0;
     padding: 0;
-    width: 230px;
+    width: 250px;
     background-color: rebeccapurple;
     position: fixed;
     height: 100%;
@@ -47,6 +47,7 @@ body {
 
 .sidebar a {
     display: block;
+    font-size: 20px;
     color: white;
     padding: 16px;
     text-decoration: none;
@@ -265,7 +266,6 @@ body {
     height: 650px;
     width: 80%;
     background-color: #cbcece;
-
     padding: 30px;
     background-color: white;
     box-shadow: 0 0 5px 0 grey;
@@ -284,9 +284,4 @@ body {
     align-items: center;
     background-color: red;
 }
-.main-wrapper {
-    width: 600px;
-    position: absolute;
-   top: 0;
-   left: 450px;
-} 
+
